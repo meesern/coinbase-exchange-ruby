@@ -175,7 +175,7 @@ module Coinbase
       end
       alias_method :sell, :ask
 
-      def cancel(id)
+      def cancel(id=nil)
         out = nil
         delete("/orders/#{id}") do |resp|
           out = response_object(resp)

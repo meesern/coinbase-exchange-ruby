@@ -1,5 +1,9 @@
 # Coinbase Pro Ruby library
 
+meesern fork with minor modifications:
+
+* supports cancel_all via cancel method without parameter.
+
 __Note:__ This library isn't actively maintained.
 Please refer to the [Node.js client library](https://github.com/coinbase/coinbase-pro-node) for an up-to-date client implementation.
 
