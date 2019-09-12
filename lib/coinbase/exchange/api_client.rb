@@ -145,6 +145,16 @@ module Coinbase
       #
       # Orders
       #
+      def place_order(params = {})
+        params[:product_id] ||= @default_product
+        out = nil
+        post("/orders", params) do |resp|
+          out = response_object(resp)
+          yield(out, resp) if block_given?
+        end
+        out
+      end
+
       def bid(amt, price, params = {})
         params[:product_id] ||= @default_product
         params[:size] = amt

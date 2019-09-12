@@ -3,6 +3,7 @@
 meesern fork with minor modifications:
 
 * supports cancel_all via cancel method without parameter.
+* supports place_order(params) where all order parameters are passed
 
 __Note:__ This library isn't actively maintained.
 Please refer to the [Node.js client library](https://github.com/coinbase/coinbase-pro-node) for an up-to-date client implementation.
